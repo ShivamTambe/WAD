@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
+
+<title>jquery</title>
+
+</head>
+<style>
+    .container{
+        border: 3px solid black;
+        margin: 5px;
+        height: 300px;
+        width: 300px;
+        background-color: brown;
+    }
+    .bgc{
+        background-color: greenyellow;
+    }
+    
+</style>
+<body>
+    <center>
+        <div  id="dic" class="container">
+        </div>
+        <button onclick="store()">change </button>
+    </center>
+</body>
+<script>
+       function store(){
+        $("div").toggleClass("bgc");
+       }
+</script>
+</html>
